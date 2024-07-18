@@ -58,7 +58,7 @@ tk=TweetTokenizer()
 email=email.apply(lambda x:tk.tokenize(x)).apply(lambda x:" ".join(x))
 email
 
-email=email.str.replace('[^a-zA-Z0-9+]',' ') #+ ==>####
+email=email.str.replace('[^a-zA-Z0-9+]',' ') #+ ==> # remove special characters
 email
 
 """**Tokenization**"""
